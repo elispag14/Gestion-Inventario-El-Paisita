@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda Virtual - El Paisita</title>
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    body {
+      background-color: #b3f0c2;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #148814;
+      padding: 1rem;
+      text-align: center;
+      color: white;
+    }
+    h1 {
+      margin: 0;
+    }
+    .contenedor-productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 2rem;
+    }
+    .producto {
+      border: 2px solid #148814;
+      border-radius: 10px;
+      padding: 1rem;
+      width: 220px;
+      background-color: white;
+      text-align: center;
+    }
+    .producto img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+    .producto h3 {
+      margin: 0.5rem 0 0.2rem;
+    }
+    .producto p {
+      font-size: 0.9rem;
+      color: #444;
+    }
+    .producto strong {
+      color: #148814;
+      display: block;
+      margin: 0.5rem 0;
+    }
+    .producto button {
+      background-color: #148814;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .producto button:hover {
+      background-color: #0d660d;
+    }
+    .carrito {
+      background-color: white;
+      padding: 1rem;
+      margin: 2rem auto;
+      border: 2px solid #148814;
+      border-radius: 10px;
+      width: 80%;
+      max-width: 500px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🛒 Tienda Virtual - Bodega El Paisita</h1>
+  </header>
+
+  <div class="contenedor-productos">
+    <!-- === PRODUCTOS === -->
+    <!-- Copia y pega este bloque para más productos -->
+    <div class="producto">
+      <img src="images/Bolso_Reciclado.png" alt="Bolso Reciclado">
+      <h3>Bolso Reciclado</h3>
+      <p>Hecho con materiales plásticos reutilizados.</p>
+      <strong>$15000</strong>
+      <button>Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="images/lamparas-ecologicas.jpg" alt="Lámpara ecológica">
+      <h3>Lámpara ecológica</h3>
+      <p>Fabricada con botellas PET recicladas.</p>
+      <strong>$28000</strong>
+      <button>Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="images/matera.png" alt="Maceta Reutilizable">
+      <h3>Maceta Reutilizable</h3>
+      <p>Ideal para plantas pequeñas.</p>
+      <strong>$8000</strong>
+      <button>Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="images/cuaderno_reciclado.jpg" alt="Cuaderno Reciclado">
+      <h3>Cuaderno Reciclado</h3>
+      <p>Papel reciclado para notas ecológicas.</p>
+      <strong>$6000</strong>
+      <button>Agregar al carrito</button>
+    </div>
+
+    <!-- Agrega aquí todos los demás productos como hiciste antes -->
+    <!-- Para abreviar, solo incluyo algunos más -->
+    <div class="producto">
+      <img src="images/jabon_artesanal.jpg" alt="Jabón Artesanal">
+      <h3>Jabón Artesanal</h3>
+      <p>Hecho con ingredientes naturales y empaques reciclables.</p>
+      <strong>$12000</strong>
+      <button>Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="images/vela_ecologica.jpg" alt="Velas Recicladas">
+      <h3>Velas Recicladas</h3>
+      <p>Hechas con cera reciclada y fragancias naturales.</p>
+      <strong>$10000</strong>
+      <button>Agregar al carrito</button>
+    </div>
+
+
+<!-- Producto 14 -->
+<div class="producto">
+  <img src="images/caneca.jpg" alt="Caneca ecológica pequeña">
+  <h3>Caneca ecológica pequeña</h3>
+  <p>Ideal para separar residuos reciclables en casa o la oficina.</p>
+  <strong>$18.000</strong>
+  <button>Agregar al carrito</button>
+</div>
+<!-- Producto 15 -->
+<div class="producto">
+  <img src="images/organizador.jpg" alt="Organizador de escritorio reciclado">
+  <h3>Organizador de escritorio reciclado</h3>
+  <p>Hecho con cartón y plástico reutilizado, ideal para lápices y accesorios.</p>
+  <strong>$12.000</strong>
+  <button>Agregar al carrito</button>
+</div>
+
+<!-- Producto 9 -->
+<div class="producto">
+  <img src="images/lapices_ecologicos.jpg" alt="Lápices de papel reciclado">
+  <h3>Lápices de papel reciclado</h3>
+  <p>Set de 6 lápices elaborados con papel reutilizado.</p>
+  <strong>$5.000</strong>
+  <button>Agregar al carrito</button>
+</div>
+
+<!-- Producto 10 -->
+<div class="producto">
+  <img src="images/frascos_reutilizables.jpg" alt="Frascos Reutilizados">
+  <h3>Frascos Reutilizados</h3>
+  <p>Frascos de vidrio decorativos, ideales para almacenar.</p>
+  <strong>$4.000</strong>
+  <button>Agregar al carrito</button>
+</div>
+
+
+<!-- Producto 7 -->
+<div class="producto">
+    <img src="images/camiseta_organica.jpg" alt="Camiseta Orgánica">
+  <h3>Camiseta Orgánica</h3>
+  <p>Algodón 100% orgánico, cómoda y ecológica.</p>
+  <strong>$30.000</strong>
+  <button>Agregar al carrito</button>
+</div>
+
+<!-- Producto 8 -->
+<div class="producto">
+  <img src="images/bolsa_ecologica.jpg" alt="Bolsa Ecológica de Tela">
+  <h3>Bolsa Ecológica de Tela</h3>
+  <p>Perfecta para compras sostenibles, reutilizable y lavable.</p>
+  <strong>$9.000</strong>
+  <button>Agregar al carrito</button>
+</div>
+
+<!-- Producto 5 -->
+<div class="producto">
+  <img src="images/cartuchera.jpg" alt="Estuche de Tela Reciclada">
+  <h3>Estuche de Tela Reciclada</h3>
+  <p>Estuche práctico hecho con telas reutilizadas.</p>
+  <strong>$10.000</strong>
+  <button>Agregar al carrito</button>
+</div>
+
+<!-- Producto 6 -->
+<div class="producto">
+  <img src="images/porta-vasos-ecologicos.jpg" alt="Portavasos Ecológico">
+  <h3>Portavasos Ecológico</h3>
+  <p>Hecho con cartón reciclado y fibras vegetales.</p>
+  <strong>$5.000</strong>
+  <button>Agregar al carrito</button>
+</div>
+
+<!-- Producto 13 -->
+<div class="producto">
+    <img src="images/lampara.jpg" alt="Lámpara con botellas recicladas">
+  <h3>Lámpara con botellas recicladas</h3>
+  <p>Iluminación moderna hecha con PET reciclado.</p>
+  <strong>$20.000</strong>
+  <button>Agregar al carrito</button>
+</div>
+
+  </div>
+
+  <!-- === CARRITO DE COMPRAS === -->
+  <div id="carrito" class="carrito">
+    <h2>🛍️ Carrito de Compras</h2>
+    <ul id="lista-carrito"></ul>
+    <p><strong>Total: </strong><span id="total">$0</span></p>
+  </div>
+<div style="margin-top: 1rem; display: flex; justify-content: space-between; gap: 10px;">
+  <button onclick="vaciarCarrito()" style="background-color: #dc3545; color: white; padding: 0.5rem 1rem; border: none; border-radius: 6px; cursor: pointer;">
+    🗑 Vaciar Carrito
+  </button>
+  <button onclick="finalizarCompra()" style="background-color: #28a745; color: white; padding: 0.5rem 1rem; border: none; border-radius: 6px; cursor: pointer;">
+    ✅ Finalizar Compra
+  </button>
+</div>
+<button onclick="generarComprobante()">Generar Comprobante</button>
+  <!-- === SCRIPT PARA EL CARRITO === -->
+  <script>
+    let totalPrecio = 0;
+    document.addEventListener("DOMContentLoaded", () => {
+      const botones = document.querySelectorAll(".producto button");
+      const listaCarrito = document.getElementById("lista-carrito");
+      const total = document.getElementById("total");
+     
+
+      botones.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const producto = btn.parentElement;
+          const nombre = producto.querySelector("h3").innerText;
+          const precioTexto = producto.querySelector("strong").innerText.replace(/\$|\.|,/g, "");
+          const precio = parseInt(precioTexto);
+
+         const item = document.createElement("li");
+
+item.style.display = "flex";
+item.style.justifyContent = "space-between";
+item.style.alignItems = "center";
+item.style.marginBottom = "5px";
+
+const textoProducto = document.createElement("span");
+textoProducto.textContent = `${nombre} - $${precio.toLocaleString("es-CO")}`;
+
+const botonEliminar = document.createElement("button");
+botonEliminar.textContent = "🗑";
+botonEliminar.style.backgroundColor = "#dc3545";
+botonEliminar.style.color = "white";
+botonEliminar.style.border = "none";
+botonEliminar.style.borderRadius = "4px";
+botonEliminar.style.cursor = "pointer";
+botonEliminar.style.padding = "5px 10px";
+botonEliminar.style.marginLeft = "10px";
+
+botonEliminar.addEventListener("click", () => {
+  item.remove();
+  totalPrecio -= precio;
+  total.textContent = `$${totalPrecio.toLocaleString("es-CO")}`;
+});
+
+item.appendChild(textoProducto);
+item.appendChild(botonEliminar);
+listaCarrito.appendChild(item);
+
+          totalPrecio += precio;
+          total.textContent = `$${totalPrecio.toLocaleString("es-CO")}`;
+        });
+      });
+    });
+
+    function vaciarCarrito() {
+  const listaCarrito = document.getElementById("lista-carrito");
+  listaCarrito.innerHTML = "";
+  total.textContent = "$0";
+  totalPrecio = 0;
+}
+
+function finalizarCompra() {
+  if (totalPrecio === 0) {
+    alert("El carrito está vacío. Agrega productos antes de comprar.");
+    return;
+  }
+
+  alert("🎉 ¡Gracias por tu compra! Te contactaremos pronto Paola.");
+  vaciarCarrito();
+}
+  </script>
+
+<!-- Biblioteca jsPDF para generar el comprobante PDF -->
+<!-- Scripts al final del body -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
